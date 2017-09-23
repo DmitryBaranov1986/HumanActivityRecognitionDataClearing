@@ -15,13 +15,13 @@ unzip("./GettingAndClearingAssigmentData/uci_har_dataset.zip", exdir = "./Gettin
 # Raw data ready for work
 
 ## Reads test data
-test <- cbind(read.fwf("./GettingAndClearingAssigmentData/UCI HAR Dataset/test/subject_test.txt", widths = 1, colClasses = "integer"), 
-              read.fwf("./GettingAndClearingAssigmentData/UCI HAR Dataset/test/Y_test.txt", widths = 1, colClasses = "integer"), 
+test <- cbind(read.table("./GettingAndClearingAssigmentData/UCI HAR Dataset/test/subject_test.txt"), 
+              read.table("./GettingAndClearingAssigmentData/UCI HAR Dataset/test/Y_test.txt"), 
               read.fwf("./GettingAndClearingAssigmentData/UCI HAR Dataset/test/X_test.txt", widths = rep.int(16, 561), colClasses = "numeric", buffersize = 25000))
 
 ## Reads train data
-train <- cbind(read.fwf("./GettingAndClearingAssigmentData/UCI HAR Dataset/train/subject_train.txt", widths = 1, colClasses = "integer"), 
-              read.fwf("./GettingAndClearingAssigmentData/UCI HAR Dataset/train/Y_train.txt", widths = 1, colClasses = "integer"), 
+train <- cbind(read.table("./GettingAndClearingAssigmentData/UCI HAR Dataset/train/subject_train.txt"), 
+               read.table("./GettingAndClearingAssigmentData/UCI HAR Dataset/train/Y_train.txt"), 
               read.fwf("./GettingAndClearingAssigmentData/UCI HAR Dataset/train/X_train.txt", widths = rep.int(16, 561), colClasses = "numeric", buffersize = 25000))
 
 ## Merges train and test to one data set and remove temporary objects "test" and "train" from R session
