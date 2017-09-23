@@ -12,5 +12,5 @@ Run script HumanActivityRecognitionDataClearing.R. It will do following steps:
 + unzip it into folder "UCI HAR Dataset"
 + process the data
 + generate two tab delimited files with tidied data: "tidyDateset.txt", "averageDataset"
-
+---
 You can get processing details and tidy data description in CodeBook.md file.
