@@ -1,3 +1,5 @@
+    library(dplyr)
+
     # Download the data
     if (!file.exists("./data")) 
     {
