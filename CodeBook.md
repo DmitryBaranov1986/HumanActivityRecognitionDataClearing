@@ -1,12 +1,12 @@
 ## Data processing 
 + Read test data: join following input files to _test_ data.frame by lines
-- 'test/subject_test.txt': Each row identifies the subject who performed the activity for each window sample
-- 'test/Y_test.txt': Test labels
-- 'test/X_test.txt': Test set
+  - 'test/subject_test.txt': Each row identifies the subject who performed the activity for each window sample
+  - 'test/Y_test.txt': Test labels
+  - 'test/X_test.txt': Test set
 + Read train data: join following input files to _train_ data.frame by lines
-- 'ttrain/subject_train.txt': Each row identifies the subject who performed the activity for each window sample
-- 'train/Y_train.txt': Training labels
-- 'train/X_train.txt': Training set
+  - 'ttrain/subject_train.txt': Each row identifies the subject who performed the activity for each window sample
+  - 'train/Y_train.txt': Training labels
+  - 'train/X_train.txt': Training set
 + Meagre _test_ and _train_ data.frames into _dataset_ data.frame
 + Read features names from 'features.txt' file
 + Set names for _dataset_: first - 'subject', second - 'activity', the rest are from features names
